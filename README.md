@@ -2,7 +2,7 @@
 
 <br>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/84f95ee2-7d0f-4aa8-99c8-59c9968c64fd" width="500">
+<img src="https://github.com/user-attachments/assets/18d9a370-0ae4-4033-a052-56ca3a4eaf60" width="500">
 </p>
 <br>
 This dataset appears to be about user behavior on a website, likely to explore how demographic and behavioral factors impact the likelihood of clicking on an ad. This dataset is from a fictional company from January to July in 2016. 
@@ -115,11 +115,11 @@ This is the second stage of  focusing on feature engineering of the dataset. The
 
 **Key steps in this stage include:**
 ## 1. Column: TimeStamp
-- Timestamp_month
-- Timestamp_day
-- HourOfDay
+- `Timestamp_month`
+- `Timestamp_day`
+- `HourOfDay`
 ## 2. Column: Age
-- AgeCategory
+- `AgeCategory`
 ## 3. Column: TimeSpentToInternetUsage
 
 <br>
@@ -133,14 +133,6 @@ This is the second stage of  focusing on feature engineering of the dataset. The
 </p>
 
 This is the next phase of the project, focusing on gaining insights. Here are some valuable insights derived from the dataset
-
-![image]()
-![image]()
-![image](https://github.com/user-attachments/assets/d1098e4c-a6d0-4f87-8a07-19644c0d5c89)
-
-
-
-
 <div align="center">
   <table>
     <tr>
@@ -148,15 +140,15 @@ This is the next phase of the project, focusing on gaining insights. Here are so
       <td><img src="https://github.com/user-attachments/assets/51079050-180f-4caa-871f-55919f9c65eb" width="300"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/7f61ce22-7305-4253-81bd-e7b70715fc31" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/f7b88c48-f946-4c68-8fae-35b9b5282bb1" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/e7fc90c3-d9fc-4728-853c-5b978929f834" width="300"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/f7b88c48-f946-4c68-8fae-35b9b5282bb1" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/58d88885-0519-4862-afc7-5f907252d400" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/e3dd77ed-388f-4cc3-b829-03a4f7aa83bd" width="300"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/58d88885-0519-4862-afc7-5f907252d400" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/d1098e4c-a6d0-4f87-8a07-19644c0d5c89" width="300"></td>
       <td><img src="https://github.com/user-attachments/assets/a0ec9fec-0d60-45c1-9f8c-1a31ba5e53ad" width="300"></td>
     </tr>
   </table>
