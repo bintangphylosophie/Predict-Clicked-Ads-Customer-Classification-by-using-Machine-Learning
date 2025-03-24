@@ -154,8 +154,10 @@ This is the next phase of the project, focusing on gaining insights. Here are so
   </table>
 </div>
 
-
-
+For further and deeper analysis and explanation, kindly check:
+```bash
+[Predict Clicked Ads Customer Classification (PDF)](https://github.com/bintangphylosophie/Predict-Clicked-Ads-Customer-Classification-by-using-Machine-Learning/blob/main/Predict%20Clicked%20Ads%20Customer%20Classification%20by%20Using%20Machine%20Learning.pdf)
+```
 # ⚙️ Stage 4: Data Preprocessing
 This stage is focusing on data preprocessing of the dataset transform the data to make it suitable for modeling
 ## 1. **Feature Encoding** 🏷️<br>
@@ -268,7 +270,7 @@ with confussion matric and ROC AUC curve like this:
 Based on the Gradient Boosting model Feature Importance:
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/200d233e-1cdc-403e-bb6a-8887b523f375](https://github.com/user-attachments/assets/632748d1-e5e0-4f97-a358-c90ef8d9c399" width="400">
+  <img src="https://github.com/user-attachments/assets/632748d1-e5e0-4f97-a358-c90ef8d9c399" width="400">
 </div>
 
 <br>
