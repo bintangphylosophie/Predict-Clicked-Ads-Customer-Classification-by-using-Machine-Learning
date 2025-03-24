@@ -211,7 +211,7 @@ pip install jupyter
 
 Once you have Python and the necessary libraries, you can run the project using Jupyter Notebook:
 ```bash
-jupyter notebook Modelling_Merged.ipynb
+jupyter notebook Predict Clicked Ads Customer Classification by Using Machine Learning.ipynb
 ```
 
 
@@ -228,38 +228,38 @@ I experimented with other algorithms. A total of 5 algorithms were tested during
 
 <br> 
 
-**Tuning:** Hyperparameter tuning was performed only on the 1 best algorithms (those with the lowest MAE).
+**Cross Validation:** 
 
 ## 2. **Model Training and Evaluation**: 🏋️‍♀️🎯<br>
 
-The following are the prediction results with the highest Accurcy and ROC-AUC:
+The following are the prediction results with the highest Precision score:
 
 ### Model Results
-| Model Name | Accuracy | ROC AUC | 
+| Model Name | Precision | CV | 
 |------------|--------------|-------------|
-| Support Vector Machine | 0.67 | 0.50 | 
-| Gradient Boosting | 0.94 | 0.94 | 
-| Decision Tree | 0.93 | 0.93 | 
-| Random Forest | 0.89 | 0.85 | 
-| Logistic Regression | 0.70 | 0.57 | 
+| Support Vector Machine | 0.96 | 0.98 | 
+| Gradient Boosting | 0.94 | 0.96 | 
+| Decision Tree | 0.91 | 0.96 | 
+| Random Forest | 0.94 | 0.96 | 
+| Logistic Regression | 0.95 | 0.94 | 
 
 
-We discovered that the Gradient Boosting Model with the highest Accuracy (0.94) and ROC AUC (0.94), stability compared to other models. 
+We discovered that the **Support Vector Machine (SVM) Model** with the highest Precision (0.96) and after Cross Validation (0.98), stability compared to other models. 
 
 ## 3. **Model Selection**: 🥇<br>
 
 ### Model Results
 | Model Name | Accuracy | ROC AUC | 
 |------------|--------------|-------------|
-| Gradient Boosting | **0.94** | **0.94** |
+| Support Vector Machine (SVM) | **0.96** | **0.98** |
 
-with confussion matrich and ROC AUC score like this:
+with confussion matric and ROC AUC curve like this:
 
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/259784b2-2b39-4912-b555-26b4d56dfdeb" width="400"></td>
-      <td><img src="https://github.com/user-attachments/assets/ffb76db3-751f-4ef9-b82a-56c05b3ec943" width="400"></td>
+      <td><img src="https://github.com/user-attachments/assets/15c43ded-71c0-4793-8497-8e04f2f1efc0" width="400"></td>
+      <td><img src="https://github.com/user-attachments/assets/c4fb754b-bb11-40cb-a5e5-eec1241ef45c" width="400"></td>
     </tr>
   </table>
 </div>
@@ -268,41 +268,50 @@ with confussion matrich and ROC AUC score like this:
 Based on the Gradient Boosting model Feature Importance:
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/200d233e-1cdc-403e-bb6a-8887b523f375" width="400">
+  <img src="[https://github.com/user-attachments/assets/200d233e-1cdc-403e-bb6a-8887b523f375](https://github.com/user-attachments/assets/632748d1-e5e0-4f97-a358-c90ef8d9c399)" width="400">
 </div>
 
 <br>
-
-The top importance feature with score > 0.01 are :
-- `AlasanResign`
-- `AsalDaerah_JakartaSelatan`
-- `UsiaKaryawan`
-- `HiringPlatform_Diversity_Jobfair`
+Support Vector Machines (SVM) do not inherently provide feature importance scores like tree-based models do. However, here are some alternative ways to assess feature importance in SVM. In this case, we get the highest Precision score useing SVMs with non-linear kernels (RBF), so permutation importance will be useful.
+The top 3 importance feature with higest are :
+- `Daily Internet Usage`
+- `Daily Time Spent on Site`
+- `Age`
+Those 3 features significantly influence our model, indicating that we can focus on using those 3 features in understanding user behavior and optimizing ad campaigns.
 
 
 ## ✅ Business Recommendation
-To improve retention, the company deploys a machine learning model to identify key factors leading to resignations. with AI-driven insights, the company designs targeted retention strategies:
+To optimizing ad spend by targeting relevant users, the company deploys a machine learning model to identify key factors leading to click on ads. with AI-driven insights, the company designs targeted retention strategies:
+**1. Optimize Ad Spend & Targeting**
+**Action:**
+Focus advertising budgets on users with a high probability of conversion (e.g., those who spend more time on-site and have moderate internet usage).
+**Implementation:**
+- Use custom audience targeting in platforms like Google Ads & Facebook Ads.
+- Increase retargeting efforts for high-scoring users based on model predictions.
 
-### The model strongly relies on "AlasanResign" (Resignation Reason), meaning that resignation trends must be analyzed deeply to take proactive action. Since working hour is the dominant factor, some action recommend:
-- **Analyze Overtime Trends:** Check which departments consistently work overtime and why.
-- **Survey Employees:** Get feedback on workload, stress levels, and preferred work hours.
-- **Compare Productivity Metrics:** Measure performance vs. hours worked to find the optimal balance.
-- **Implement Flexible Working Hours:** Allow employees to choose a start time (e.g., 7 AM - 3 PM, 9 AM - 5 PM, 11 AM - 7 PM)
-- **Implement Hybrid & Remote Work Options:** Allow employees to work 2-3 days from home per week.
-- **Reduce Unnecessary Meetings & Improve Time Efficiency:** Limit Meetings to 30-45 Minutes, Set "No-Meeting Days“,Block 1-2 days per week for deep work without interruptions.
+**2. Improve User Engagement for Low-Intent Visitors**
+**Action:** 
+Users who spend less time on-site but have high internet usage may need better engagement strategies to convert.
+**Implementation:**
+- Use exit-intent popups offering discounts for users with low engagement.
+- Optimize website content for better navigation and product discovery.
 
-### The model detects that employees from Jakarta Selatan and mid-employees have a higher risk of resigning. 
-- **Personalized Exit Interviews:** Focus on  mid-employee and Jakarta Selatan employees to understand their concerns, "Stay Interviews": Monthly check-ins with at-risk employees
-- **Internal Mentorship Programs:** Pair mid-level employees with senior mentors.
+**3. Personalize Marketing for Different Age Groups**
+**Action:** 
+- Young Users (18-35) → Offer fast checkout, social proof, and influencer-driven campaigns.
+- Older Users (50+) → Provide detailed product descriptions, trust-building elements, and customer support. 
+**Implementation:**
+- A/B test different landing pages for different age segments.
+- Use dynamic pricing & promotions based on engagement patterns.
 
-#### Machine learning provided valuable insights, but human intervention was key in designing effective retention strategies. XYZ Corp launches AI-powered retention programs for 6 months and tracks the impact.
+
+
 
 ## 📝 Business Impact Simulation  
-Company Name Profile: **XYZ Corp**
-A tech company, XYZ Corp, has been struggling with high employee turnover, affecting productivity, morale, and recruitment costs. To improve retention, the company deploys a machine learning model to identify key factors leading to resignations. with AI-driven insights, the company designs targeted retention strategies.
+A digital marketing agency, **AdTech Solutions**, partners with an e-commerce company to improve its online ad targeting strategy. The company aims to optimize its advertising budget by identifying users who are most likely to click on ads based on their demographic and behavioral characteristics.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/78c8ecef-dbf8-444e-9c8c-4906da6ebf09" width="600">
+  <img src="[https://github.com/user-attachments/assets/78c8ecef-dbf8-444e-9c8c-4906da6ebf09](https://github.com/user-attachments/assets/cc56699e-e10e-4d81-9f76-fb40ddd2f7f6)" width="600">
 </div>
 
 
