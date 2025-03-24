@@ -268,7 +268,7 @@ with confussion matric and ROC AUC curve like this:
 Based on the Gradient Boosting model Feature Importance:
 
 <div align="center">
-  <img src="[https://github.com/user-attachments/assets/200d233e-1cdc-403e-bb6a-8887b523f375](https://github.com/user-attachments/assets/632748d1-e5e0-4f97-a358-c90ef8d9c399)" width="400">
+  <img src="https://github.com/user-attachments/assets/200d233e-1cdc-403e-bb6a-8887b523f375](https://github.com/user-attachments/assets/632748d1-e5e0-4f97-a358-c90ef8d9c399" width="400">
 </div>
 
 <br>
