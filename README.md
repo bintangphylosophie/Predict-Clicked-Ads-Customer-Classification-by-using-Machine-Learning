@@ -310,7 +310,8 @@ Users who spend less time on-site but have high internet usage may need better e
 
 
 ## 📝 Business Impact Simulation  
-A digital marketing agency, **AdTech Solutions**, partners with an e-commerce company to improve its online ad targeting strategy. The company aims to optimize its advertising budget by identifying users who are most likely to click on ads based on their demographic and behavioral characteristics.
+![business simulation](https://github.com/user-attachments/assets/79329f97-5009-4a5b-824c-2326639af2e8)
+
 
 <div align="center">
   <img src="[https://github.com/user-attachments/assets/78c8ecef-dbf8-444e-9c8c-4906da6ebf09](https://github.com/user-attachments/assets/cc56699e-e10e-4d81-9f76-fb40ddd2f7f6)" width="600">
